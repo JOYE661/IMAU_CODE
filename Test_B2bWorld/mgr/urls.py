@@ -1,8 +1,12 @@
 from django.urls import path
-from .import customer,sign_in_out
+from .import customer,sign_in_out,medicine,order
 
 urlpatterns = [
     path('customers', customer.dispatcher),
+
+    path('medicines', medicine.dispatcher),
+
+    path('order', order.dispatcher),
 
     path('signin', sign_in_out.signin),
 
