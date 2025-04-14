@@ -36,7 +36,7 @@ const app = new Vue({
         return {
             students: [], //所有的学生信息
             pageStudents: [], //分页后当前页的学生
-            baseURL: "http://192.168.182.128:8000/",
+            baseURL: "http://127.0.0.1:8000/",
             inputStr: '', //输入的查询条件
             selectStudents: [], //选择复选框是把选择记录存在这个几个
 
@@ -186,7 +186,7 @@ const app = new Vue({
         //添加学生时打开表单
         addStudent() {
             //修改标题
-            this.dialogTitle = "添加学生明细";
+            this.dialogTitle = "添加订单明细";
             //弹出表单
             this.dialogVisible = true;
         },
@@ -203,7 +203,7 @@ const app = new Vue({
         //查看学生的明细
         viewStudent(row) {
             //修改标题
-            this.dialogTitle = "查看学生明细";
+            this.dialogTitle = "查看订单信息";
             //修改isView变量
             this.isView = true;
             //弹出表单
@@ -219,7 +219,7 @@ const app = new Vue({
         //修改学生的明细
         updateStudent(row) {
             //修改标题
-            this.dialogTitle = "修改学生明细";
+            this.dialogTitle = "修改订单信息";
             //修改isEdit变量
             this.isEdit = true;
             //弹出表单
@@ -323,7 +323,7 @@ const app = new Vue({
         //删除一条学生记录 
         deleteStudent(row) {
             //等待确认
-            this.$confirm('是否确认删除学生信息【学号：' + row.sno + '\t姓名：' + row.name + '】信息？',
+            this.$confirm('是否确认删除订单信息【单号：' + row.sno + '\t产品：' + row.name + '】信息？',
                 '提示', {
                 confirmButtonText: '确定删除',
                 cancelButtonText: '取消',

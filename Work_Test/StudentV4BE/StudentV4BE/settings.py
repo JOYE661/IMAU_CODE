@@ -26,7 +26,7 @@ SECRET_KEY = 'p*2w(%a*p3^9vbdtj-%&r#+49=s+i=1lral1f8!*qnv0!+(=od'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1"]
+ALLOWED_HOSTS = ["127.0.0.1",'localhost','192.168.182.128']
 
 
 # Application definition
@@ -140,6 +140,7 @@ MEDIA_URL = '/media/'
 
 # 添加Cors配置
 # 1. 设置白名单
-CORS_ORIGIN_WHITELIST = ('http://192.168.182.1:8080',)
+CORS_ORIGIN_WHITELIST = ('http://127.0.0.1:5500',)
+#'http://192.168.182.1:8080',
 # 2. 是指Cors Cookie
 CORS_ALLOW_CREDENTIALS = True
