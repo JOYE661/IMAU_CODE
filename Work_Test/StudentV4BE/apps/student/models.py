@@ -13,7 +13,8 @@ class Student(models.Model):
     mobile = models.CharField(db_column="Mobile", max_length=100) # 手机号码，
     email = models.CharField(db_column="Email",max_length=100) # 邮箱地址
     address = models.CharField(db_column="Address",max_length=200) # 家庭住址
-    image = models.CharField(db_column="Image", max_length=200,null=True) # 照片
+    image = models.CharField(db_column="Image", 
+                             max_length=200,null=True) # 照片
 
     # 在默认情况下，生成的表名：App_class, 如果要自定义 ，需要使用Class Meta来自定义
     class Meta:

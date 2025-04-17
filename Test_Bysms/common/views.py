@@ -3,4 +3,4 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def listorders(request):
-    return HttpResponse("ÏÂÃæÊÇÏµÍ³ÖĞËùÓĞµÄ¶©µ¥ĞÅÏ¢¡£¡£¡£")
+    return HttpResponse("ä¸‹é¢æ˜¯ç³»ç»Ÿä¸­æ‰€æœ‰çš„è®¢å•ä¿¡æ¯ã€‚ã€‚ã€‚")

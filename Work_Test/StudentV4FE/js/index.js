@@ -53,6 +53,7 @@ const app = new Vue({
                 sno: '',
                 name: '',
                 gender: '',
+                
                 birthday: '',
                 mobile: '',
                 email: '',
@@ -62,30 +63,30 @@ const app = new Vue({
             },
             rules: {
                 sno: [
-                    { required: true, message: '学号不能为空', trigger: 'blur' },
-                    { pattern: /^[9][5]\d{3}$/, message: '学号必须是95开头的五位数', trigger: 'blur' },
+                    { required: true, message: '不能为空', trigger: 'blur' },
+                    { pattern: /^[9][5]\d{3}$/, message: '必须是95开头的五位数', trigger: 'blur' },
                     { validator: rulesSNo, trigger: 'blur' }, //校验学号是否存在！
                 ],
                 name: [
-                    { required: true, message: '姓名不能为空', trigger: 'blur' },
-                    { pattern: /^[\u4e00-\u9fa5]{2,5}$/, message: '姓名必须是2-5个汉字', trigger: 'blur' },
+                    { required: true, message: '不能为空', trigger: 'blur' },
+                    { pattern: /^[\u4e00-\u9fa5]{2,10}$/, message: '必须是2-10个汉字', trigger: 'blur' },
                 ],
                 gender: [
-                    { required: true, message: '性别不能为空', trigger: 'change' },
+                    { required: true, message: '不能为空', trigger: 'change' },
                 ],
                 birthday: [
-                    { required: true, message: '出生日期不能为空', trigger: 'change' },
+                    { required: true, message: '不能为空', trigger: 'change' },
                 ],
                 mobile: [
-                    { required: true, message: '手机号码不能为空', triggler: 'blur' },
+                    { required: true, message: '不能为空', triggler: 'blur' },
                     { pattern: /^[1][35789]\d{9}$/, message: '手机号码必须要符合规范', trigger: 'blur' },
                 ],
                 email: [
-                    { required: true, message: '邮箱地址不能为空', trigger: 'blur' },
+                    { required: true, message: '不能为空', trigger: 'blur' },
                     { pattern: /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/, message: '邮箱地址必须要符合规范', trigger: 'blur' },
                 ],
                 address: [
-                    { required: true, message: '家庭住址不能为空', trigger: 'blur' },
+                    { required: true, message: '不能为空', trigger: 'blur' },
                 ]
             }
         }
