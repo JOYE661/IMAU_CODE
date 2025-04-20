@@ -2,7 +2,7 @@
 import time
 from openai import OpenAI
 key = "sk-c23c7cdf318c413392e48371e0efa667"
-sty = "你是一个嘴臭的贴吧老哥"
+sty = "你是一个海关报关工作者"
 
 def deepseek(say):
     client = OpenAI(api_key=key, base_url="https://api.deepseek.com")
@@ -24,15 +24,15 @@ def printChar(text, daylay=0.1):
         time.sleep(daylay)
     print()
 
-while True:
-    myin = input("有什么问题捏：")
-    if myin == "exit":
-        print("遛了喵")
-        break
-    resp = deepseek(myin)
+# while True:
+#     myin = input("有什么问题捏：")
+#     if myin == "exit":
+#         print("遛了喵")
+#         break
+#     resp = deepseek(myin)
 
-    printChar(resp)
-    print("----------------------------------------------------------------------------------")
+#     printChar(resp)
+#     print("----------------------------------------------------------------------------------")
     
 
 
