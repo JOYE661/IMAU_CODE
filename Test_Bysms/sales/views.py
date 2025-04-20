@@ -2,9 +2,13 @@ from django.shortcuts import render
 from django.http import HttpResponse
 # 导入 Customer 对象定义
 from  common.models import  Customer
-
+from Test_api.deepseek import deepseek
 def listorders(request):
-    return HttpResponse("下面是系统中所有的订单信息。。。")
+    ret=deepseek("列出海关报税相关流程")
+    str = f"{ret}"
+    return HttpResponse(str)
+# def listorders(request):
+#     return HttpResponse("下面是系统中所有的订单信息。。。")
 
 
 # 先定义好HTML模板
