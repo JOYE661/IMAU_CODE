@@ -7496,7 +7496,7 @@
               href: "#"
             }, Me.a.createElement("i", {
               className: "fa fa-bar-chart"
-            }), " ", Me.a.createElement("span", null, "海关清关"), Me.a.createElement("span", {
+            }), " ", Me.a.createElement("span", null, "AI辅助报关"), Me.a.createElement("span", {
               className: "pull-right-container"
             }, Me.a.createElement("i", {
               className: "fa fa-angle-left pull-right"
@@ -7504,9 +7504,9 @@
               className: "treeview-menu"
             }, Me.a.createElement("li", null, Me.a.createElement("a", {
               href: "https://online.customs.gov.cn/alllistitems/"
-            }, "报关")), Me.a.createElement("li", null, Me.a.createElement("a", {
+            }, "报关官方入口")), Me.a.createElement("li", null, Me.a.createElement("a", {
               href: "http://localhost:8000/sales/deepseek/"
-            }, "清关")))))))
+            }, "报关清关助手")))))))  
           }
         }]), t
     }(),
